@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulário e Cadastro</title>
+</head>
+
+<body class="test">
+    <div class="formTitle">
+        User partial infos
+    </div>
+    <form class="styledFormulary">
+        <div class="firstLineForm">
+            <div class="columnForm">
+                <label class="styledLabel" for="firstName">First Name</label>
+                <div class="styledDivComponent">
+                    <input class="styledInput" id="firstName" name="firstname" placeholder="first name" />
+                </div>
+            </div>
+            <div class="columnForm">
+                <label class="styledLabel" for="lastName">Last Name</label>
+                <div class="styledDivComponent">
+                    <input class="styledInput" id="lastName" name="lastname" placeholder="last name" />
+                </div>
+            </div>
+            <div class="columnForm">
+                <label class="styledLabel" for="username">Username</label>
+                <div class="styledDivComponent styledUsername">
+                    <div class="styledUsernameExample">@</div>
+                    <input class="styledInput" id="username" name="username" placeholder="username" />
+                </div>
+            </div>
+        </div>
+        <div class="secondLineForm">
+            <div class="columnForm">
+                <label class="styledLabel" for="city">City</label>
+                <div class="styledDivComponent">
+                    <input class="styledInput" id="city" name="city" placeholder="city" />
+                </div>
+            </div>
+            <div class="columnForm">
+                <label class="styledLabel" for="state">State</label>
+                <div class="styledDivComponent">
+                    <input class="styledInput" id="state" name="state" placeholder="state" />
+                </div>
+            </div>
+            <div class="columnForm">
+                <label class="styledLabel" for="zipCode">Zip Code</label>
+                <div class="styledDivComponent">
+                    <input class="styledInput" id="zipCode" name="zipCode" placeholder="xxxxx-xxx" />
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+            <input type="checkbox" id="aceptTerms" value="true" class="checkedInput">
+            <label for="aceptterms">Agree toterms and conditions</label>
+        </div>
+        <button type="submit" class="submitButton">Submit Form</button>
+    </form>
+
+    <!-- ***************************************************************************************** -->
+
+    <div class="formTitle">
+        User complete infos
+    </div>
+    <form class="register_Formulary">
+        <div class="firstLineRegister">
+            <div class="cpf-code">
+                <div class="columnForm">
+                    <label class="register_styledLabel" for="register_code">Código</label>
+                    <input class="register_codeInput" id="register_code" name="register_code" placeholder="32"
+                        type="number" />
+                </div>
+
+                <div class="columnForm">
+                    <label class="register_styledLabel" for="register_name">Nome</label>
+                    <input class="register_styledInput" id="register_name" name="register_name" placeholder="nome" />
+                </div>
+            </div>
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_email">E-mail</label>
+                <input class="register_styledInput" id="register_email" name="register_email"
+                    placeholder="cliente@dominio.com" />
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_cpf">CPF</label>
+                <input class="register_styledInput" id="register_cpf" name="register_cpf" placeholder="Só números"
+                    type="number" />
+            </div>
+        </div>
+
+        <div class="secondLineRegister">
+            <div class="phones">
+                <div class="columnForm">
+                    <label class="register_styledLabel" for="register_celular">N° Celular</label>
+                    <input class="register_styledInput" id="register_celular" name="register_celular"
+                        placeholder="(xx) xxxxx-xxxx" />
+                </div>
+
+                <div class="columnForm">
+                    <label class="register_styledLabel" for="register_fixo">N° Telefone fixo</label>
+                    <input class="register_styledInput" id="register_fixo" name="register_fixo"
+                        placeholder="(xx) xxxx-xxxx" />
+                </div>
+
+                <div class="columnForm">
+                    <label class="register_styledLabel" for="register_cep">CEP</label>
+                    <input class="register_styledInput" id="register_cep" name="register_cep" placeholder="xxxxx-xxx"
+                        type="number" />
+                </div>
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_rua">Logradouro</label>
+                <input class="register_styledInput" id="register_rua" name="register_rua" placeholder="Rua Nome" />
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_numeroRua">N°</label>
+                <input class="register_styledInput" id="register_numeroRua" name="register_numeroRua"
+                    placeholder="N°" />
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_bairro">Bairro</label>
+                <input class="register_styledInput" id="register_bairro" name="register_bairro" placeholder="bairro" />
+            </div>
+        </div>
+
+        <div class="lastLineRegister">
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_cidade">Cidade</label>
+                <input class="register_styledInput" id="register_cidade" name="register_cidade" placeholder="cidade" />
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_uf">UF</label>
+                <input class="register_styledInput" id="register_uf" name="register_uf" placeholder="UF" />
+            </div>
+
+            <div class="columnForm">
+                <label class="register_styledLabel" for="register_cidade">Status</label>
+                <select class="register_styledInput" style="height: 34px;">
+                    <option value="Disponível">Disponível</option>
+                    <option value="Indisponível">Indisponível</option>
+                </select>
+            </div>
+        </div>
+        <div class="styledButtons">
+            <input class="register_Button" style="background-color: #c43a3f;" type="reset" value="Resetar" />
+            <input class="register_Button" style="background-color: #1bbe49; margin-left: 4px" type="submit"
+                value="Próximo" />
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
